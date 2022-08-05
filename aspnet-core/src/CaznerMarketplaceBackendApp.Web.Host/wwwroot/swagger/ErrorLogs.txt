@@ -1,0 +1,94 @@
+8/2/2022 10:43:10 AM ------------------------------------------------------------------------------------------------------------------
+UploadBulkProducts executed
+Tesseract path: Line no 46
+8/2/2022 10:43:10 AM ------------------------------------------------------------------------------------------------------------------
+ImportProductsFromExcelJob executed
+Tesseract path: Line no 79
+8/2/2022 10:43:34 AM ------------------------------------------------------------------------------------------------------------------
+ImportProductsFromExcelJob response done
+Tesseract path: Line no 79
+02-08-22 10:43:39 ------------------------------------------------------------------------------------------------------------------
+CreateProductData executing started
+Tesseract path: Line no 180
+02-08-22 10:48:15 ------------------------------------------------------------------------------------------------------------------
+Line no 3438 first foreach
+Tesseract path: Line no 3438 first foreach
+Error: Line no 3438 first foreach
+02-08-22 10:51:13 ------------------------------------------------------------------------------------------------------------------
+line no 3773 DeleteBulkProductVariant bulk
+Tesseract path: line no 3773 DeleteBulkProductVariant bulk
+Error: line no 3773 deletevariant bulk
+02-08-22 10:51:52 ------------------------------------------------------------------------------------------------------------------
+Line no 3759 end of foreach
+Tesseract path: Line no 3759 end of foreach
+Error: Line no 3759 end of foreach
+02-08-22 10:51:52 ------------------------------------------------------------------------------------------------------------------
+CreateProducts successfully executed
+Tesseract path: 1334
+------------------------------------------------------------------------
+
+8/2/2022 11:15:15 AM ------------------------------------------------------------------------------------------------------------------
+UploadBulkProducts executed
+Tesseract path: Line no 46
+8/2/2022 11:15:15 AM ------------------------------------------------------------------------------------------------------------------
+ImportProductsFromExcelJob executed
+Tesseract path: Line no 79
+8/2/2022 11:15:36 AM ------------------------------------------------------------------------------------------------------------------
+ImportProductsFromExcelJob response done
+Tesseract path: Line no 79
+02-08-22 11:15:41 ------------------------------------------------------------------------------------------------------------------
+CreateProductData executing started
+Tesseract path: Line no 180
+02-08-22 11:17:00 ------------------------------------------------------------------------------------------------------------------
+An exception was thrown while attempting to evaluate a LINQ query parameter expression. To show additional information call EnableSensitiveDataLogging() when overriding DbContext.OnConfiguring.
+Tesseract path: 0
+Error:    at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.GetValue(Expression expression, String& parameterName)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Evaluate(Expression expression, Boolean generateParameter)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Linq.Expressions.ExpressionVisitor.VisitBinary(BinaryExpression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Linq.Expressions.ExpressionVisitor.VisitLambda[T](Expression`1 node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Linq.Expressions.ExpressionVisitor.VisitUnary(UnaryExpression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at System.Dynamic.Utils.ExpressionVisitorUtils.VisitArguments(ExpressionVisitor visitor, IArgumentProvider nodes)
+   at System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(MethodCallExpression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.Visit(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ParameterExtractingExpressionVisitor.ExtractParameters(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Castle.Proxies.Invocations.IRepository`2_GetAllList_75.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_34.GetAllList(Expression`1 predicate)
+   at CaznerMarketplaceBackendApp.Product.Importing.ImportProductsFromExcelJob.CreateProductDataUsingTemp(Int32 TenantId) in F:\Cazner project\Final working directory\26-03-2021\CaznerMarketplaceBackendApp\aspnet-core\src\CaznerMarketplaceBackendApp.Application\Product\Importing\ImportProductsFromExcelJob.cs:line 3639
+
+   --------------------------------------------------------------------------------------------------
+
+
+8/2/2022 11:46:04 AM ------------------------------------------------------------------------------------------------------------------
+UploadBulkProducts executed
+Tesseract path: Line no 46
+8/2/2022 11:46:05 AM ------------------------------------------------------------------------------------------------------------------
+ImportProductsFromExcelJob executed
+Tesseract path: Line no 79
+8/2/2022 11:46:51 AM ------------------------------------------------------------------------------------------------------------------
+ImportProductsFromExcelJob response done
+Tesseract path: Line no 79
+02-08-22 11:46:54 ------------------------------------------------------------------------------------------------------------------
+CreateProductData executing started
+Tesseract path: Line no 180
+02-08-22 11:50:59 ------------------------------------------------------------------------------------------------------------------
+Line no 3438 first foreach
+Tesseract path: Line no 3438 first foreach
+Error: Line no 3438 first foreach
+02-08-22 12:01:04 ------------------------------------------------------------------------------------------------------------------
+Line no 3759 end of foreach
+Tesseract path: Line no 3759 end of foreach
+Error: Line no 3759 end of foreach
+02-08-22 12:01:04 ------------------------------------------------------------------------------------------------------------------
+CreateProducts successfully executed
+Tesseract path: 1334

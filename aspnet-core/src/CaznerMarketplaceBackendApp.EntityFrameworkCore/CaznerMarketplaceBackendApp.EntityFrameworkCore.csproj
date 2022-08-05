@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <RootNamespace>CaznerMarketplaceBackendApp</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20210323051832_Added_UserDetails_Table.cs" />
+    <Compile Remove="Migrations\20210323051832_Added_UserDetails_Table.Designer.cs" />
+    <Compile Remove="Migrations\20210804133251_Added_Fk_TrunArounTime_ProductMaster.cs" />
+    <Compile Remove="Migrations\20210804133251_Added_Fk_TrunArounTime_ProductMaster.Designer.cs" />
+    <Compile Remove="Migrations\20210902130740_Added_MeasurementId_BrandingAdditionalPrice_Table.cs" />
+    <Compile Remove="Migrations\20210902130740_Added_MeasurementId_BrandingAdditionalPrice_Table.Designer.cs" />
+    <Compile Remove="Migrations\20210910103219_Added_BrandingMethods_Assignments_Product_Assigned_Tables.cs" />
+    <Compile Remove="Migrations\20210910103219_Added_BrandingMethods_Assignments_Product_Assigned_Tables.Designer.cs" />
+    <Compile Remove="Migrations\20210925151413_Modified_ProductAssignedCollections_fk_Table.cs" />
+    <Compile Remove="Migrations\20210925151413_Modified_ProductAssignedCollections_fk_Table.Designer.cs" />
+    <Compile Remove="Migrations\20211126072804_Added_Indexes_all_tables.cs" />
+    <Compile Remove="Migrations\20211126072804_Added_Indexes_all_tables.Designer.cs" />
+    <Compile Remove="Migrations\20211126102054_Added_ProductBulkImportRawData_Table.cs" />
+    <Compile Remove="Migrations\20211126102054_Added_ProductBulkImportRawData_Table.Designer.cs" />
+    <Compile Remove="Migrations\20211126103829_Added_ProductBulkUploadRawData_Table.cs" />
+    <Compile Remove="Migrations\20211126103829_Added_ProductBulkUploadRawData_Table.Designer.cs" />
+    <Compile Remove="Migrations\20220706100623_Added_StatesTempRawData_Table.cs" />
+    <Compile Remove="Migrations\20220706100623_Added_StatesTempRawData_Table.Designer.cs" />
+    <Compile Remove="Migrations\20220722123259_Added_CollectionHomePage_Table.cs" />
+    <Compile Remove="Migrations\20220722123259_Added_CollectionHomePage_Table.Designer.cs" />
+    <Compile Remove="Migrations\20220724031958_Modified_ProductBulkRawData_Table.cs" />
+    <Compile Remove="Migrations\20220724031958_Modified_ProductBulkRawData_Table.Designer.cs" />
+    <Compile Remove="Migrations\20220725101022_Added_CategoryHomePage_Table.cs" />
+    <Compile Remove="Migrations\20220725101022_Added_CategoryHomePage_Table.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EFCore.BulkExtensions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CaznerMarketplaceBackendApp.Core\CaznerMarketplaceBackendApp.Core.csproj" />
+  </ItemGroup>
+</Project>

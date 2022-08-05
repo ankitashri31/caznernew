@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "Default",
+      "suggestion": "true",
+      "ignored": "true"
+    },
+    "signalr1": {
+      "type": "signalr",
+      "connectionId": "",
+      "suggestion": "true",
+      "ignored": "true"
+    }
+  }
+}

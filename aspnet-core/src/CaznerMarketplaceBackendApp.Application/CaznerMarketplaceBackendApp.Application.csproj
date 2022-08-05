@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>CaznerMarketplaceBackendApp.Application</AssemblyName>
+    <PackageId>CaznerMarketplaceBackendApp.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>CaznerMarketplaceBackendApp</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="5.14.0" />
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="NPOI" Version="2.5.1" />
+    <PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CaznerMarketplaceBackendApp.Application.Shared\CaznerMarketplaceBackendApp.Application.Shared.csproj" />
+    <ProjectReference Include="..\CaznerMarketplaceBackendApp.Core\CaznerMarketplaceBackendApp.Core.csproj" />
+    <ProjectReference Include="..\CaznerMarketplaceBackendApp.EntityFrameworkCore\CaznerMarketplaceBackendApp.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>
